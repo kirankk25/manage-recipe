@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: ${sql-dialect}
+    show-sql: ${sql-show}
+    hibernate:
+      ddl-auto: ${sql-ddl-auto}
+  datasource:
+    url: ${sql-datasource-url}
+jwt:
+  expiration:
+    time: ${jwt-token-timeout}  
